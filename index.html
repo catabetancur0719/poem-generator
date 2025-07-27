@@ -4,26 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poem generator</title>
+  <link rel="stylesheet" href="/src/style.css">
 </head>
+
 <body>
-  <header>
- <h1> Welcome to my AI peom generator</h1>
- </header>
+  <div class="container">
+    <header>
+      <h1>Welcome to my AI poem generator</h1>
+    </header>
 
-<main>
- <form>
-   <input type="text" placeholder="enter a word for create a poem">
-   <input type="submit">
- </form>
+    <main>
+      <div class="form-container">
+        <form id="poem-generator-form">
+          <input
+            class="instructions"
+            id="user-instructions"
+            type="text"
+            placeholder="Enter a word to create a poem"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input class="submit-button" type="submit" value="Generate Poem" />
+        </form>
+      </div>
 
- <div>
-  aqui
-  <br>
-  sale 
-  <br>
-  el poema 
- </div>
-</main>
+      <div id="poem-output">
+        aquí<br />
+        sale<br />
+        el poema
+      </div>
+    </main>
 
 <footer class="devInfo">
         Code by
@@ -39,6 +50,8 @@
           target="_blank"
           >Netlify</a
         >
+
+</div>
   <script src="src/index.js"></script>
 </body>
 </html>
